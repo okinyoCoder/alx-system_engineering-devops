@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+#loops from 1 to 20 and:
+#displays 4 bad luck from China
+#display 9 bad luck from Japan
+#display 17 bad luck from Italy
+i=1
+
+while [ $i -le "20" ]
+do
+	if [ $i -eq "4" ];
+        then
+		echo "$1"
+		echo "bad luck from China"
+        elif [ $i -eq "9" ];
+        then
+		echo "$1"
+                echo "bad luck from Japan"
+        elif [ $i -eq "17" ];
+        then
+                echo "$1"
+                echo "bad luck from Italy"
+	
+	else
+		echo "$i"
+        fi
+
+	((i += 1))
+done
