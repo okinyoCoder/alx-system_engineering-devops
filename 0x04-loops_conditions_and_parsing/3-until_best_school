@@ -1,10 +1,8 @@
 #!/usr/bin/env bash
-#displays Best School 10 times
-
+# This script is displaying "Holberton School" 10 times with until
 i=1
 
-until [ $i -gt 10 ];
-do
-        echo "Best Scool"
-        ((i++))
+until [ $i -gt "10" ]; do
+    echo "Holberton School"
+    (("i += 1"))
 done 
