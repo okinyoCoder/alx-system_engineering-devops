@@ -10,7 +10,7 @@ do
 	echo "Hour: $hour"
 	while [ $minutes -le 59 ];
 	do
-		echo $minutes
+		echo "$minutes"
 		((minutes++))
 	done
 	((hour++))
