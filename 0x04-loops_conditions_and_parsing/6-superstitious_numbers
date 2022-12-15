@@ -9,19 +9,18 @@ while [ $i -le "20" ]
 do
 	if [ $i -eq "4" ];
         then
-		echo "$1"
+		echo $1
 		echo "bad luck from China"
         elif [ $i -eq "9" ];
         then
-		echo "$1"
+		echo $1
                 echo "bad luck from Japan"
         elif [ $i -eq "17" ];
         then
-                echo "$1"
+                echo $1
                 echo "bad luck from Italy"
-	
 	else
-		echo "$i"
+		echo $i
         fi
 
 	((i += 1))
