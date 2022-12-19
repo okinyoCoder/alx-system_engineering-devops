@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
-#script that configures a new Ubuntu machine to respect above requirements
-#       - installs nginx on a webserver
-#       - nginx should listen ro port 80
+# script that configures a new Ubuntu machine to respect above requirements
+# installs nginx on a webserver
+# nginx should listen to port 80
 
-sudo apt get -y update
+sudo apt get update -y
 sudo apt get install -y nginx
 sudo ufw allow 'Nginx HTTP'
 echo "Hello World!" | sudo tee var/www/html/index.html
-sudo service nginx restart
+sudo service nginx start
