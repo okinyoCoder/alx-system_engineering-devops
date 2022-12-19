@@ -3,7 +3,6 @@
 #       - installs nginx on a webserver
 #       - nginx should listen ro port 80
 
-
 sudo apt get -y update
 sudo apt get install -y nginx
 sudo ufw allow 'Nginx HTTP'
