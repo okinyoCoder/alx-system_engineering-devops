@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+#This script uses While to display 
+#+Best School loop
+
+i=1
+while [ $i -le 10 ];
+do
+	echo "Best School"
+	((i++))
+done
