@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+#Script that displays a list of currently running processes
+#  Display in a user-oriented format
+#  shows peocess hierarchy
+
+ps -eo uname,pid,%cpu,%mem,vsz,rss,tname,stat,start_time,time,args
