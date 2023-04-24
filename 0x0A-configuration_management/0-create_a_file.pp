@@ -5,4 +5,5 @@ file { '/tmp/school':
   mode    => '0744',
   owner   => 'www-data',
   path    => '/tmp/school',
+  ensure => 'file'
 }
