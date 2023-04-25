@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 #In this first debugging project, you will need to get
 
-echo "ServerName localhost" >> /etc/apache2.conf
-sudo service apache2 start
+/etc/init.d/apache2 start
