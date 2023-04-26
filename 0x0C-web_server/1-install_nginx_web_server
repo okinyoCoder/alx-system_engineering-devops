@@ -3,7 +3,7 @@
 # script that configures a new Ubuntu machine torespect above
 #   requirements installs nginx on a webserver
 
-apt get update
+apt get -y update
 apt get -y install nginx
 service nginx start
 ufw allow 'Nginx HTTP'
