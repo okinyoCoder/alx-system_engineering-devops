@@ -1,16 +1,15 @@
 #!/usr/bin/env bash
 # script that installs load balance
 
-sudo apt-get -y update
+sudo apt-get -y updatei
+sudo apt-get -y install nginx
 sudo apt-get install --no-install-recommends software-properties-common
 sudo add-apt-repository ppa:vbernat/haproxy-2.0
 sudo apt-get install haproxy=2.0.\*
-
-echo\ 
+loadbalancer =\ 
 "frontend http
   bind *:80
   mode http
- 
   default_backend web-backend
 
 backend web-backend
