@@ -1,9 +1,13 @@
 #!/usr/bin/env bash
 # script that installs load balance
 sudo apt-get -y update
+# apt-get install --no-install-recommends software-properties-common
+# add-apt-repository ppa:vbernat/haproxy-2.2
+#apt-get install haproxy=2.2.\*
 sudo apt-get -y install software-properties-common
-sudo add-apt-repository -y ppa:vbernat/haproxy-2.0
-sudo apt-get -y install haproxy=2.0.\*
+sudo add-apt-repository -y ppa:vbernat/haproxy-2.2
+sudo apt-get -y update
+sudo apt-get -y install haproxy=2.2.\*
 echo "frontend httpnode
          bind *:80
          mode http
