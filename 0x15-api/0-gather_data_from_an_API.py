@@ -26,4 +26,4 @@ if __name__ == "__main__":
             name, count, total_task))
 
         for i in lizt:
-            print('\t {}'.format(i))
+            print('\t{}'.format(i))
