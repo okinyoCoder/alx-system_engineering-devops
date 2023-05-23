@@ -19,7 +19,7 @@ if __name__ == "__main__":
         for obj in task:
             if obj.get('completed') == True:
                 count = count + 1
-            lizt.append(obj.get('title'))
+                lizt.append(obj.get('title'))
         print('Employee {} is done with tasks ({}/{})'
                 .format(name, count, total_task))
         for i in lizt:
