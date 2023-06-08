@@ -10,7 +10,7 @@ import requests
 
 def number_of_subscribers(subreddit):
     url = "https://www.reddit.com/r/{}/about".format(subreddit)
-    headers = {'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64)AppleWebKit/537.36 (KHTML, like Gecko) Chrome/51.0.2704.106 Safari/537.36 OPR/320.41'}
+    headers = {'User-Agent': 'Chrome/51.0.2704.106'}
     res = requests.get(url, headers=headers)
     print(res.json)
     if res.status_code != 200:
