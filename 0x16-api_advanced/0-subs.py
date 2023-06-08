@@ -9,6 +9,7 @@ import requests
 
 
 def number_of_subscribers(subreddit):
+    '''function that queries the Reddit API and returns'''
     url = "https://www.reddit.com/r/{}/about".format(subreddit)
     headers = {'User-Agent': 'Chrome/51.0.2704.106'}
     res = requests.get(url, headers=headers)
